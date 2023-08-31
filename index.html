@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/css/datepicker.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            crossorigin="anonymous">
+
+    </head>
+    <body>
+
+        <div class="main">
+
+            <div class="leftcol">
+
+                <i class="fa-solid fa-eye fa-2xl" style="color: black;"></i>
+                <hr>
+                <div class="iconsgroup2">
+                    <div id="icongroup">
+                        <div class="wrapicon">
+                            <i class="fa-solid fa-heart-pulse"
+                                style="color: black;"></i>
+                        </div>
+                        <div class="wrapicon">
+                            <i class="fa-solid fa-satellite-dish"
+                                style="color: black;"></i>
+                        </div>
+                        <div class="wrapicon">
+                            <i class="fa-solid fa-calendar"
+                                style="color: black;"></i>
+                        </div>
+                        <div class="wrapicon">
+                            <i class="fa-solid fa-sliders" style="color: black;"></i>
+                        </div>
+                        <div class="wrapicon">
+
+                            <i class="fa-regular fa-comments"
+                                style="color: #000000;"></i>
+                        </div>
+
+                    </div>
+                    <i class="fa-solid fa-arrow-right-from-bracket"
+                        style="color: #000000;"></i>
+
+                </div>
+            </div>
+
+            <div class="middle">
+                <div class="top">
+                    <div class="navs">
+                        <i class="fa-solid fa-table-list fa-lg"
+                            style="color: #000000;"></i>
+                        <i class="fa-solid fa-bars fa-lg"
+                            style="color: #c1c2c2;margin-left:5px"></i>
+                    </div>
+                    <div class="lastdays">
+                        LAST 15 DAYS
+                        <i class="fa-solid fa-chevron-down fa-2xs"
+                            style="color: #545454;margin-left:3px"></i>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+
+                        <i class="fa-brands fa-twitter fa-2xl"
+                            style="color: #1da1f2;"></i>
+                        <br>
+                        <br>
+                        <p style="font-size:xx-large">280k</p>
+
+                        <span style="font-size: x-small;">Followers</span>
+                        <br>
+                        <br>
+                        <i class="fa-solid fa-ellipsis fa-xs"
+                            style="color: #000000; float:right"></i>
+                    </div>
+                    <div class="card" style="background-color: white;">
+
+                        <i class="fa-brands fa-instagram fa-2xl"
+                            style="color: #7f559b;"></i>
+                        <br>
+                        <br>
+                        <p style="font-size:xx-large">680k</p>
+
+                        <span style="font-size: x-small;">Followers</span>
+                        <br>
+                        <br>
+                        <i class="fa-solid fa-ellipsis fa-xs"
+                            style="color: #000000; float:right"></i>
+                    </div>
+
+                    <div class="card">
+
+                        <i class="fa-brands fa-youtube fa-2xl"
+                            style="color: #f40606;"></i>
+                        <br>
+                        <br>
+                        <p style="font-size:xx-large">2.3M</p>
+
+                        <span style="font-size: x-small;">Followers</span>
+                        <br>
+                        <br>
+                        <i class="fa-solid fa-ellipsis fa-xs"
+                            style="color: #000000; float:right"></i>
+                    </div>
+
+                    <div class="card">
+
+                        <i class="fa-brands fa-facebook-f fa-2xl"
+                            style="color: #1f51a8;"></i>
+                        <br>
+                        <br>
+                        <p style="font-size:xx-large">50k</p>
+
+                        <span style="font-size: x-small;">Followers</span>
+                        <br>
+                        <br>
+                        <i class="fa-solid fa-ellipsis fa-xs"
+                            style="color: #000000; float:right"></i>
+                    </div>
+
+                </div>
+
+                <div class="chartcard">
+
+                    <div class="chartinfo">
+                        <h5>Instgram Subscribers</h5>
+                        <div class="dataset">
+                            <div
+                                style="display: flex;justify-content:center;align-items:center;margin-right:8px"><div
+                                    id="circle"
+                                    style="background-color: green;"></div>
+                                <span style="font-size:smaller">Gained</span></div>
+                            <div
+                                style="display: flex;justify-content:center;align-items:center;"><div
+                                    id="circle"
+                                    style="background-color: rgb(188, 10, 10);"></div>
+                                <span style="font-size:smaller">Lost</span></div>
+                        </div>
+                    </div>
+                    <canvas id="barChart" width="500" height="150"></canvas>
+
+                </div>
+
+                <div class="analytics">
+                    <div class="metrics">
+                        <h5>Key Metrics</h5>
+                        <div class="line">
+                            <span>Clicks</span>
+                            <span>10k</span>
+                        </div>
+                        <hr>
+                        <div class="line">
+                            <span>Likes</span>
+                            <span>680</span>
+                        </div>
+                        <hr>
+                        <div class="line">
+                            <span>Followers</span>
+                            <span>8k</span>
+                        </div>
+                        <hr>
+                        <div class="line">
+                            <span>Impressions</span>
+                            <span>5500</span>
+                        </div>
+                    </div>
+                    <div class="statistics">
+
+                        <div class="sttcard">
+                            <p style="font-size: 12px;">Engaged Users</p>
+                            <h1 style="margin-bottom:20px">12.2k</h1>
+                            <div
+                                style="display: flex; flex-direction:row;align-items:center ">
+                                <i
+                                    class="fa-solid fa-angles-up fa-2xs"
+                                    style="color: #59ff00; "></i>
+                                <span id="rate">19%</span>
+                            </div>
+                        </div>
+                        <div class="sttcard">
+                            <p style="font-size: 12px;">Page Impressions</p>
+                            <h1 style="margin-bottom:20px">8.6k</h1>
+                            <div
+                                style="display: flex; flex-direction:row;align-items:center "><i
+                                    class="fa-solid fa-angles-down fa-2xs"
+                                    style="color: #ff3300;"></i>
+                                <span id="rate">9%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="rightcol">
+                <div class="accnt">
+                    <i class="fa-regular fa-bell" style="color: #0d0d0d;"></i>
+                    <button class="updatesbutton">
+                        <i class="fa-solid fa-gift" style="color: #909192;"></i>
+                        2 NEW UPDATES
+                    </button>
+                    <i class="fa-regular fa-user" style="color: #000000;"></i>
+                </div>
+
+                <div class="scrumimg">
+                    <img src="images/scrum-svg.svg" alt="Resim">
+                </div>
+
+                <div id="calendar"></div>
+
+                <div class="meetingbox">
+                    <p>
+                        🤘 Say hi to <b>Laith Hart</b>
+                    </p>
+                    <div class="profilepic">
+                        <img src="images/men.png" alt srcset>
+                    </div>
+                </div>
+                <div class="meetingbox">
+                    <p>
+                        🤘 Say hi to <b>Sidney Dyer</b>
+                    </p>
+                    <div class="profilepic">
+                        <img src="images/woman.png" alt srcset>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/js/datepicker.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.min.js"></script>
+        <script>
+            $(document).ready(function() {
+              $('#calendar').datepicker({
+               language :'en',
+               inline:true
+              });
+            });
+
+            var ctx = document.getElementById('barChart').getContext('2d');
+        var barChart = new Chart(ctx, {
+            type: 'bar', // Çubuk grafiği
+            data: {
+                labels: [ 'January', 'February', 'March', 'April', 'May', 'June',
+                'July'], // Aylar
+                datasets: [
+                    {
+                        label: 'Gain',
+                        data: [5, 40, 35, 75, 55,5,60], // Veriler
+                        backgroundColor: '#fece76' // Çubuk rengi
+                    },
+                    {
+                        label: 'Lost',
+                        data: [-5, -15, -10, -20, 1,-10,-12], // Veriler
+                        backgroundColor: '#d03c55' // Çubuk rengi
+                    }
+                ]
+            },
+            options: {
+                responsive: false, // Responsive tasarım kapalı
+                maintainAspectRatio: false, // Genişlik ve yükseklik ayarlarını koruma
+                scales: {
+                    y: {
+                        beginAtZero: true // Y ekseni 0'dan başlar
+                    }
+                }
+            }
+        });
+            
+          </script>
+    </body>
+</html>
